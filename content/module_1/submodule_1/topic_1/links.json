@@ -1,0 +1,20 @@
+[
+    {
+        "model": "videos.additionallink",
+        "pk": 1,
+        "fields": {
+            "topic": 1,
+            "url": "https://www.zerocopter.com/blog-en/reporting-tips-using-markdown-to-make-your-report-look-better",
+            "description": "Reporting Tips: Using Markdown"
+        }
+    },
+    {
+        "model": "videos.additionallink",
+        "pk": 2,
+        "fields": {
+            "topic": 1,
+            "url": "https://www.zerocopter.com/blog-en/reporting-tips-setting-the-severity-of-a-report-with-the-cvss-calculator",
+            "description": "Reporting tips: setting the severity of a report with the CVSS calculator"
+        }
+    }
+]
