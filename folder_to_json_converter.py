@@ -88,11 +88,18 @@ def json_to_folder(json_filepath, output_folder=CONTENT_DIR):
                                     json.dump(additional_links, f, indent=4)
 
 
-def folder_to_json(folder_path=CONTENT_DIR):
+def folder_to_json_with_pks(folder_path=CONTENT_DIR):
     """
     Convert the folder structure back to Django-style JSON dump.
     """
     data = []
+
+    module_pk = 1
+    submodule_pk = 1
+    topic_pk = 1
+    video_pk = 1
+    note_pk = 1
+    link_pk = 1
 
     # List all modules
     for module_name in os.listdir(folder_path):
@@ -103,6 +110,7 @@ def folder_to_json(folder_path=CONTENT_DIR):
             
             module_data = {
                 'model': 'videos.module',
+                'pk': module_pk,
                 'fields': {
                     'name': module_name,
                     'description': module_info.get('description', ''),
@@ -119,10 +127,11 @@ def folder_to_json(folder_path=CONTENT_DIR):
                     
                     submodule_data = {
                         'model': 'videos.submodule',
+                        'pk': submodule_pk,
                         'fields': {
                             'name': submodule_name,
                             'description': submodule_info.get('description', ''),
-                            'module': module_name
+                            'module': module_pk
                         }
                     }
                     data.append(submodule_data)
@@ -136,10 +145,11 @@ def folder_to_json(folder_path=CONTENT_DIR):
                             
                             topic_data = {
                                 'model': 'videos.topic',
+                                'pk': topic_pk,
                                 'fields': {
                                     'name': topic_name,
                                     'description': topic_info.get('description', ''),
-                                    'submodule': submodule_name
+                                    'submodule': submodule_pk
                                 }
                             }
                             data.append(topic_data)
@@ -151,10 +161,16 @@ def folder_to_json(folder_path=CONTENT_DIR):
                             for video in videos:
                                 video_data = {
                                     'model': 'videos.video',
-                                    'fields': video
+                                    'pk': video_pk,
+                                    'fields': {
+                                        'title': video['title'],
+                                        'url': video['url'],
+                                        'tags': video.get('tags', ''),
+                                        'topic': topic_pk
+                                    }
                                 }
-                                video_data['fields']['topic'] = topic_name
                                 data.append(video_data)
+                                video_pk += 1
                             
                             # Handle notes
                             notes_filepath = os.path.join(topic_path, 'notes.md')
@@ -165,12 +181,14 @@ def folder_to_json(folder_path=CONTENT_DIR):
                                 if notes.strip():
                                     note_data = {
                                         'model': 'videos.coursenote',
+                                        'pk': note_pk,
                                         'fields': {
-                                            'topic': topic_name,
+                                            'topic': topic_pk,
                                             'content': notes.strip()
                                         }
                                     }
                                     data.append(note_data)
+                                    note_pk += 1
                             else:
                                 notes = ''
 
@@ -184,26 +202,29 @@ def folder_to_json(folder_path=CONTENT_DIR):
                                 for link in additional_links:
                                     link_data = {
                                         'model': 'videos.additionallink',
+                                        'pk': link_pk,
                                         'fields': {
-                                            'topic': topic_name,
+                                            'topic': topic_pk,
                                             'url': link['url'],
                                             'description': link.get('description', '')
                                         }
                                     }
                                     data.append(link_data)
+                                    link_pk += 1
                             else:
                                 additional_links = []
-
+                            
+                            topic_pk += 1
+                    submodule_pk += 1
+            module_pk += 1
 
     return data
-
-
 if __name__ == "__main__":
     # Example usage
     # Convert Django-style JSON dump to folder structure
-    json_to_folder("/Users/patrik/Repos/practical-bug-bounty/bugbountytube/test.json", "/Users/patrik/Repos/practical-bug-bounty-content/content/")
+#    json_to_folder("/Users/patrik/Repos/practical-bug-bounty/bugbountytube/test.json", "/Users/patrik/Repos/practical-bug-bounty-content/content/")
 
     # Convert folder structure back to Django-style JSON dump
-    converted_data = folder_to_json()
+    converted_data = folder_to_json_with_pks()
     with open("/Users/patrik/Repos/practical-bug-bounty/bugbountytube/output.json", 'w') as f:
         json.dump(converted_data, f, indent=4)
