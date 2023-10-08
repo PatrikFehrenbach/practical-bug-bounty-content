@@ -25,6 +25,82 @@ This script will traverse the folder structure, collect the data, and generate a
 
 ## Examples
 
+## Detailed Example: Generating an Entire Module
+
+In this example, we will create a new module named `Web Security`, a submodule named `XSS Attacks`, and a topic named `Reflected XSS`.
+
+### 1. Creating a New Module
+
+To create a new module:
+
+- Navigate to the root content directory.
+- Create a directory named `Web Security`.
+
+### 2. Adding a Submodule
+
+Within the `Web Security` directory:
+
+- Create a directory named `XSS Attacks`.
+
+### 3. Adding a Topic
+
+Inside the `XSS Attacks` directory:
+
+- Create a directory named `Reflected XSS`.
+
+### 4. Adding Metadata to the Topic
+
+Inside the `Reflected XSS` directory:
+
+- Create a file named `info.json`.
+- Add the following content to `info.json`:
+
+```json
+{
+  "description": "An introduction to Reflected XSS attacks."
+}
+```
+### 5. Adding Videos to the Topic
+
+- Still within the Reflected XSS directory, create a file named `videos.json`.
+- Add the following content to `videos.json`:
+
+```json
+[
+  {
+    "title": "Understanding Reflected XSS",
+    "url": "https://youtube.com/examplelink1"
+  }
+]
+```
+
+### 6. Adding Notes to the Topic
+
+- Create a file named `notes.md` in the same directory.
+- Add your notes. For example:
+
+```markdown
+# Reflected XSS
+
+Reflected XSS attacks are a type of XSS where the injected script is reflected off a web server
+``` 
+### 7. Adding External Links
+
+- Create a file named `links.json`.
+- Add the following content:
+
+```json 
+
+[
+  {
+    "url": "https://security.example.com/reflected-xss",
+    "description": "Deep dive into Reflected XSS"
+  }
+]
+
+``` 
+
+
 ### Adding a New Module
 
 1. Create a new directory in the root folder with the module name.
