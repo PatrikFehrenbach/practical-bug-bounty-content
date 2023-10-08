@@ -9,3 +9,4 @@ Moreover, clear reports build credibility for the researcher. Organizations are 
 Additionally, report writing is a skill that showcases the researcher's professionalism and attention to detail. It signifies that the researcher isn't just technically adept but also possesses the soft skills necessary in the cybersecurity domain.
 
 In summary, while discovering bugs is vital, effective report writing ensures they are addressed appropriately.
+
