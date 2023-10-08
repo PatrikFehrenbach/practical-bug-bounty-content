@@ -157,30 +157,43 @@ def folder_to_json(folder_path=CONTENT_DIR):
                                 data.append(video_data)
                             
                             # Handle notes
-                            with open(os.path.join(topic_path, 'notes.md'), 'r') as f:
-                                notes = f.read()
-                            
-                            if notes.strip():
-                                note_data = {
-                                    'model': 'videos.coursenote',
-                                    'fields': {
-                                        'topic': topic_name,
-                                        'content': notes.strip()
+                            notes_filepath = os.path.join(topic_path, 'notes.md')
+                            if os.path.exists(notes_filepath):
+                                with open(notes_filepath, 'r') as f:
+                                    notes = f.read()
+                                
+                                if notes.strip():
+                                    note_data = {
+                                        'model': 'videos.coursenote',
+                                        'fields': {
+                                            'topic': topic_name,
+                                            'content': notes.strip()
+                                        }
                                     }
-                                }
-                                data.append(note_data)
+                                    data.append(note_data)
+                            else:
+                                notes = ''
+
                             
                             # Handle additional links
-                            with open(os.path.join(topic_path, 'links.json'), 'r') as f:
-                                additional_links = json.load(f)
-                            
-                            for link in additional_links:
-                                link_data = {
-                                    'model': 'videos.additionallink',
-                                    'fields': link
-                                }
-                                link_data['fields']['topic'] = topic_name
-                                data.append(link_data)
+                            links_filepath = os.path.join(topic_path, 'links.json')
+                            if os.path.exists(links_filepath):
+                                with open(links_filepath, 'r') as f:
+                                    additional_links = json.load(f)
+                                
+                                for link in additional_links:
+                                    link_data = {
+                                        'model': 'videos.additionallink',
+                                        'fields': {
+                                            'topic': topic_name,
+                                            'url': link['url'],
+                                            'description': link.get('description', '')
+                                        }
+                                    }
+                                    data.append(link_data)
+                            else:
+                                additional_links = []
+
 
     return data
 
