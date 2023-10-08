@@ -1,8 +1,8 @@
-**# 🚀 Welcome to the Practical Bug Bounty Content Repository!**
+# ** 🚀 Welcome to the Practical Bug Bounty Content Repository!**
 
 Welcome to the Practical Bug Bounty Content repository, your ultimate destination for mastering the art of ethical hacking and bug bounty hunting! 🎉 This repository is not just a place for learning; it's a vibrant community of curious minds, security enthusiasts, and future cybersecurity superheroes! 🦸‍♂️🦸‍♀️
 
-**# Practical Bug Bounty Course Content 🎓**
+# ** Practical Bug Bounty Course Content 🎓**
 
 **Module 1: Basics 🕵️‍♂️**
 - **Submodule: Writing a Report 📝**
@@ -22,7 +22,7 @@ Welcome to the Practical Bug Bounty Content repository, your ultimate destinatio
 - **Submodule: Exploitation Strategies 💻**
   - ...
 
-**# Folder Structure 📂**
+# ** Folder Structure 📂**
 
 - Each `module` is a directory that unlocks a new level of expertise.
 - Within each `module`, you'll find `submodules`, gateways to specialized knowledge.
@@ -34,7 +34,7 @@ Welcome to the Practical Bug Bounty Content repository, your ultimate destinatio
   - `links.json`: Portals to external wisdom, expanding your horizons further.
 
 
-## [This is our Targeted Topics we are supposed to cover 😉](https://github.com/krishanthan4/practical-bug-bounty-content/blob/main/course-topics.md)
+### [This is our Targeted Topics we are supposed to cover 😉](https://github.com/krishanthan4/practical-bug-bounty-content/blob/main/course-topics.md)
 
 🌟 How to Generate New Content
 Creating exciting and valuable content is as easy as a few simple steps. Let's dive into the magical world of content creation! ✨📚
@@ -45,39 +45,37 @@ Feel like an explorer as you journey through our content galaxy.
 Find your spot in the folder structure where you want to add or modify content.
 2. Modify Existing Files or Add New Files as Required 🖋️
 
-Become the content creator extraordinaire.
 Follow the structure mentioned above like a seasoned pro.
 3. Run the Converter Script 🚀
 
-Imagine you're casting a spell to bring your content to life.
 Navigate to the repository root and run the converter script with this incantation:
 ```python
 python3 folder_to_json_converter.py
 ```
 
-🪄 Watch as the script works its magic, collecting data, and generating a Django-compatible JSON dump.
+🪄 This script will traverse the folder structure, collecting data, and generating a Django-compatible JSON dump.
 
 # 🌠 Examples
 ## 🚀 Detailed Example: Generating an Entire Module
 
 In this adventure, we'll create a new module called `Web Security`, a submodule named `XSS Attacks`, and a topic named `Reflected XSS`. Let's embark on this epic quest! 🛡️🎯
 
-1. Creating a New Module
+### 1. Creating a New Module
 
-- Feel like a content architect.
+- **Feel like a content architect**.
 - Navigate to the root content directory and conjure up a directory named `Web Security`.
 
-2. Adding a Submodule
+### 2. Adding a Submodule
 
 - Continue your creative journey within the `Web Security` directory.
 - Craft a directory named `XSS Attacks`.
 
-3. Adding a Topic
+### 3. Adding a Topic
 
 - Venture deeper into the `XSS Attacks` directory.
 - Imagine you're unearthing hidden treasures as you create a directory named `Reflected XSS`.
 
-4. Adding Metadata to the Topic
+### 4. Adding Metadata to the Topic
 
 - Be the lore keeper.
 - Inside the Reflected XSS directory, pen down a file named `info.json`.
@@ -86,8 +84,9 @@ In this adventure, we'll create a new module called `Web Security`, a submodule 
 {
   "description": "An introduction to RRemember to run the converter script after making changes to generate an updated JSON dump.eflected XSS attacks."
 }
-5. Adding Videos to the Topic
 ```
+
+### 5. Adding Videos to the Topic
 
 You're now the director of your content masterpiece.
 Within the Reflected XSS directory, weave a file named `videos.json`.
@@ -100,7 +99,8 @@ Craft `videos.json` with the following magic:
   }
 ]
 ```
-6. Adding Notes to the Topic
+
+### 6. Adding Notes to the Topic
 
 - Be the scribe of knowledge.
 - Summon a file named notes.md in the same directory.
@@ -111,7 +111,7 @@ Craft `videos.json` with the following magic:
 
 Reflected XSS attacks are a type of XSS where the injected script is reflected off a web server.
 ```
-7. Adding External Links
+### 7. Adding External Links
 
 - Be the curator of the finest resources.
 - Create a file named `links.json`.
