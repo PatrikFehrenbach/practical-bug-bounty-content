@@ -2,6 +2,26 @@
 
 Welcome to the Practical Bug Bounty Content repository. This repository is designed to house structured content for the course, organized in a hierarchical folder structure for ease of use and contribution.
 
+
+# Practical Bug Bounty Course Content
+
+- **Module 1: Basics**
+  - **Submodule: Writing a Report**
+    - Topic: Report Writing
+      - Video: HTTP Request Smuggling - False Positives by PinkDraconian
+      - Video: Q: How to write a BUG BOUNTY report that actually gets paid?
+      - Note: The Importance of Report Writing in Bug Bounty
+      - Additional Link: [Reporting Tips: Using Markdown](https://www.zerocopter.com/blog-en/reporting-tips-using-markdown-to-make-your-report-look-better)
+      - Additional Link: [Reporting tips: setting the severity of a report with the CVSS calculator](https://www.zerocopter.com/blog-en/reporting-tips-setting-the-severity-of-a-report-with-the-cvss-calculator)
+    - Topic: Understanding CVSS
+      - Video: What is CVSS? | Common Vulnerability Scoring System
+    - ...
+  - **Submodule: Scope**
+    - ...
+- **Module 2: ...**
+  - ...
+
+
 ## Folder Structure
 
 - Each `module` is a directory.
