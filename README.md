@@ -4,22 +4,22 @@ This repository is meticulously crafted to serve as a home for structured conten
 
 # Practical Bug Bounty Course Content 🎓
 
-**Module 1: Basics 🕵️‍♂️**
-- **Submodule: Writing a Report 📝**
-  - **Topic: Report Writing 📑**
-    - 🎥 Video: HTTP Request Smuggling - False Positives by PinkDraconian
-    - 🎥 Video: Q: How to write a BUG BOUNTY report that actually gets paid?
-    - 📌 Note: The Importance of Report Writing in Bug Bounty
-    - 🔗 Additional Link: [Reporting Tips: Using Markdown](https://www.zerocopter.com/blog-en/reporting-tips-using-markdown-to-make-your-report-look-better)
-    - 🔗 Additional Link: [Reporting tips: setting the severity of a report with the CVSS calculator](https://www.zerocopter.com/blog-en/reporting-tips-setting-the-severity-of-a-report-with-the-cvss-calculator)
-  - **Topic: Understanding CVSS 🎯**
+**Module 1: Basics**
+- **Submodule: Writing a Report**
+  - **Topic: Report Writing**
+    - Video: HTTP Request Smuggling - False Positives by PinkDraconian
+    - Video: Q: How to write a BUG BOUNTY report that actually gets paid?
+    - Note: The Importance of Report Writing in Bug Bounty
+    - Additional Link: [Reporting Tips: Using Markdown](https://www.zerocopter.com/blog-en/reporting-tips-using-markdown-to-make-your-report-look-better)
+    - Additional Link: [Reporting tips: setting the severity of a report with the CVSS calculator](https://www.zerocopter.com/blog-en/reporting-tips-setting-the-severity-of-a-report-with-the-cvss-calculator)
+  - **Topic: Understanding CVSS**
     - 🎥 Video: What is CVSS? | Common Vulnerability Scoring System
     - 📝 Explore the intricacies of the Common Vulnerability Scoring System (CVSS)
     - 🧠 Dive deep into the world of vulnerability scoring and severity assessment
   - ...
 
-**Module 2: Advanced Techniques 🔍**
-- **Submodule: Exploitation Strategies 💻**
+**Module 2: Advanced Techniques**
+- **Submodule: Exploitation Strategies**
   - ...
 
 # Folder Structure 📂
@@ -33,9 +33,6 @@ This repository is meticulously crafted to serve as a home for structured conten
   - `notes.md`: Textual gems and insights, ensuring you grasp the essence.
   - `links.json`: Portals to external wisdom, expanding your horizons further.
 
-
-### [Check our Targeted Topics to cover 😉](https://github.com/krishanthan4/practical-bug-bounty-content/blob/main/course-topics.md)
-**Your input matters! Contribute to the listed topics 👆. If a new module is necessary, please Add it**
 
 🌟 How to Generate New Content
 Creating exciting and valuable content is as easy as a few simple steps. Let's dive into the magical world of content creation! ✨📚
