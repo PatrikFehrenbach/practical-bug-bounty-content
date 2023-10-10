@@ -36,9 +36,9 @@ This repository is meticulously crafted to serve as a home for structured conten
 🌟 How to Generate New Content
 Creating exciting and valuable content is as easy as a few simple steps. Let's dive into the magical world of content creation! ✨📚
 
-1.Navigate to the desired location in the folder structure.
-2.Modify existing files or add new files as required. Ensure you follow the structure mentioned above.
-3.Once you've added or modified content, navigate to the repository root and run the converter script:
+ 1.Navigate to the desired location in the folder structure.
+ 2.Modify existing files or add new files as required. Ensure you follow the structure mentioned above.
+ 3.Once you've added or modified content, navigate to the repository root and run the converter script:
 
 ```python
 python3 folder_to_json_converter.py
