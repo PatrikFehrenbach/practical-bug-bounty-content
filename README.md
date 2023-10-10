@@ -13,9 +13,7 @@ This repository is meticulously crafted to serve as a home for structured conten
     - Additional Link: [Reporting Tips: Using Markdown](https://www.zerocopter.com/blog-en/reporting-tips-using-markdown-to-make-your-report-look-better)
     - Additional Link: [Reporting tips: setting the severity of a report with the CVSS calculator](https://www.zerocopter.com/blog-en/reporting-tips-setting-the-severity-of-a-report-with-the-cvss-calculator)
   - **Topic: Understanding CVSS**
-    - 🎥 Video: What is CVSS? | Common Vulnerability Scoring System
-    - 📝 Explore the intricacies of the Common Vulnerability Scoring System (CVSS)
-    - 🧠 Dive deep into the world of vulnerability scoring and severity assessment
+    - Video: What is CVSS? | Common Vulnerability Scoring System
   - ...
 
 **Module 2: Advanced Techniques**
@@ -24,14 +22,15 @@ This repository is meticulously crafted to serve as a home for structured conten
 
 # Folder Structure 📂
 
-- Each `module` is a directory that unlocks a new level of expertise.
-- Within each `module`, you'll find `submodules`, gateways to specialized knowledge.
-- Every `submodule` hosts various `topics`, where secrets of the trade are unveiled.
-- In each `topic` directory, you'll discover:
-  - `info.json`: Your map to the topic's key details.
-  - `videos.json`: A treasure trove of video references, guiding you through the topic.
-  - `notes.md`: Textual gems and insights, ensuring you grasp the essence.
-  - `links.json`: Portals to external wisdom, expanding your horizons further.
+- Each `module` is a directory.
+- Within each `module`, there are `submodules`, which are also directories.
+- Each `submodule` contains `topics`, which are again directories.
+- Each topic directory can have:
+ - `info.json`: Contains metadata about the topic.
+ - `videos.json`: Contains a list of video references associated with the topic.
+ - `notes.md`: Contains any textual notes or additional information about the topic.
+ - `links.json`: Contains a list of external links related to the topic.
+
 
 
 🌟 How to Generate New Content
@@ -54,23 +53,23 @@ In this adventure, we'll create a new module called `Web Security`, a submodule 
 
 ### 1. Creating a New Module
 
-- **Feel like a content architect**.
-- Navigate to the root content directory and conjure up a directory named `Web Security`.
+- Navigate to the root content directory
+- Create a directory named `Web Security`.
 
 ### 2. Adding a Submodule
 
-- Continue your creative journey within the `Web Security` directory.
-- Craft a directory named `XSS Attacks`.
+- Within the `Web Security` directory.
+- Create a directory named `XSS Attacks`.
 
 ### 3. Adding a Topic
 
-- Venture deeper into the `XSS Attacks` directory.
-- Imagine you're unearthing hidden treasures as you create a directory named `Reflected XSS`.
-
+- Inside the `XSS Attacks` directory.
+- Create a directory named `Reflected XSS`.
+Craft
 ### 4. Adding Metadata to the Topic
 
 - Inside the Reflected XSS directory, pen down a file named `info.json`.
-- Enchant `info.json` with this content:
+- Add the following content to `info.json` :
 ```json
 {
   "description": "An introduction to RRemember to run the converter script after making changes to generate an updated JSON dump.eflected XSS attacks."
@@ -79,8 +78,8 @@ In this adventure, we'll create a new module called `Web Security`, a submodule 
 
 ### 5. Adding Videos to the Topic
 
-Within the Reflected XSS directory, weave a file named `videos.json`.
-Craft `videos.json` with the following magic:
+Within the Reflected XSS directory, create a file named `videos.json`.
+Add the following content to `videos.json` :
 ```json
 [
   {
@@ -92,8 +91,8 @@ Craft `videos.json` with the following magic:
 
 ### 6. Adding Notes to the Topic
 
-- Summon a file named `notes.md` in the same directory.
-- Pen down your knowledge, like an ancient scroll:
+- Create a file named `notes.md` in the same directory.
+- Add your notes. For example:
 
 ```md
 # Reflected XSS
@@ -103,7 +102,7 @@ Reflected XSS attacks are a type of XSS where the injected script is reflected o
 ### 7. Adding External Links
 
 - Create a file named `links.json`.
-- Populate it with these gems:
+- Add the following content:
 
 ```json
 [
