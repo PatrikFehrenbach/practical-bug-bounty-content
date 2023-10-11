@@ -24,7 +24,7 @@
   - [ ] Basic Command Injection
 	- [ ] Blind Command Injection
 - [ ] SQL Injection
-  - [ ] CLassic SQL Injection
+  - [x] CLassic SQL Injection
   - [ ] Blind SQL Injection
 	  - [ ] Boolean-Based Blind SQL Injection
 	  - [ ] Time-Based Blind SQL Injection
