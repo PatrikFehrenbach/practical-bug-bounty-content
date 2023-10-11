@@ -1,0 +1,39 @@
+# Check List Of Vulnerabilities
+
+- [ ] Insecure CORS Misconfiguration
+- [ ] Clickjacking (UI Redressing Attack)
+- [ ] Cross Site Scripting (XSS)
+  - [ ] Reflected XSS
+  - [ ] DOM Based XSS
+  - [ ] Stored XSS
+- [ ] Cross Site Request Forgery (CSRF)
+- [ ] Insecure Direct Object References (IDOR)
+- [ ] Subdomain Takeover
+- [ ] Broken Authentication
+- [ ] Authentication Bypass
+- [ ] Cryptographic Failures
+- [ ] Local File Inclusion (LFI)
+- [ ] Remote File Inclusion (RFI)
+- [ ] 2FA Related issues
+- [ ] Server-side Template Injection (SSTI)
+- [ ] Denial of Service (DOS)
+- [ ] Race Condition
+- [ ] XML External Entities (XXE)
+- [ ] Server Side Request Forgery (SSRF)
+- [ ] Command Injection
+  - [ ] Basic Command Injection
+	- [ ] Blind Command Injection
+- [ ] SQL Injection
+  - [x] CLassic SQL Injection
+  - [ ] Blind SQL Injection
+	  - [ ] Boolean-Based Blind SQL Injection
+	  - [ ] Time-Based Blind SQL Injection
+	- [ ] Error-Based SQL Injection
+	- [ ] Union-Based SQL Injection
+	- [ ] Out-of-Band SQL Injection
+- [ ] Remote Code Execution (RCE)
+- [ ] NoSQL Injection
+- [ ] CRLF Injection
+- [ ] Open Redirect
+- [ ] Parameter Pollution
+- [ ] OAuth to Account Takeover
