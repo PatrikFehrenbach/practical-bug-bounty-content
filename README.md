@@ -19,6 +19,10 @@ This repository is meticulously crafted to serve as a home for structured conten
 **Module 2: Advanced Techniques**
 - **Submodule: Exploitation Strategies**
   - ...
+ 
+  
+### [Check our Targeted Topics to cover 😉](https://github.com/krishanthan4/practical-bug-bounty-content/blob/main/content.md)
+**Your input is valuable! Please check the vulnerability checklist above 👆 to identify the modules you can contribute to. If a new module is needed, your addition would be appreciated.**
 
 # Folder Structure 📂
 
